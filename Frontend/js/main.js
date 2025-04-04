@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const API_URL = "http://localhost:8080/api";
+  const API_URL = "https://mini-twitter-r2l9.vercel.app/api";
 
   const form = document.getElementById("post-form");
   const textarea = form.querySelector("textarea");
