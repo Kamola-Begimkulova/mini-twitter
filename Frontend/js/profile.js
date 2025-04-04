@@ -2,7 +2,7 @@ const profileDIv = document.getElementById('profile');
 
 function showProfile() {
     const id = localStorage.getItem('userId');
-    axios.get(`https://mini-twitter-r2l9.vercel.app/api/users/${id}`)
+    axios.get(`http://localhost:8080/api/users/${id}`)
     .then(response => {
         console.log(response.data);
 
@@ -17,7 +17,7 @@ function showProfile() {
         profileDIv.innerHTML = `
             <h2>${data.name}</h2>
             <p>Username: ${data.username}</p>
-            <img class="image_pic" src="https://mini-twitter-r2l9.vercel.app/uploads/${data.profile_picture}" alt="Profile Picture" width="100">
+            <img class="image_pic" src="http://localhost:8080/uploads/${data.profile_picture}" alt="Profile Picture" width="100">
             
         `;
     })

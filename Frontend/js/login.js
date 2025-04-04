@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await axios.post(
-        "https://mini-twitter-r2l9.vercel.app/api/auth/login",
+        "http://localhost:8080/api/auth/login",
         {
           username,
           password,
