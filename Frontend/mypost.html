@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Twitter</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="./js/mypost.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div>
+        <h2>Mini Twitter</h2>
+        <p class="username">@user</p>
+        <nav>
+          <a href="#">Home</a>
+          <a href="./profile.html">Profile</a>
+        </nav>
+      </div>
+      <div class="bottom-links">
+        <a href="#">Edit Profile</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-inner">
+        <header>
+          <h1>Your profile</h1>
+        </header>
+        <div id="mypost">
+
+        </div>
+        <!-- <form id="post-form">
+          <textarea placeholder="What's on your mind?" required></textarea>
+          <input type="file" accept="image/*" />
+          <input type="submit" value="Post" />
+        </form> -->
+
+        <!-- Posts will be loaded here dynamically -->
+      </div>
+    </div>
+
+    <button class="logout-btn">Logout</button>
+  </body>
+</html>
